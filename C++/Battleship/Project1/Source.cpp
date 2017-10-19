@@ -6,33 +6,58 @@ using namespace std;
 
 int main()
 {
-	int grid[50];  //declaring the size grid
-	for (int x = 0 ; x < 50; x = x + 1)  //assigning array to a value of 0 of all locations
-	{
-		grid[x] = 0;
-	}
+	int grid[10][10];  //declaring the size grid
 
+
+	for (int y = 0 ; y < 10; y = y + 1)
+	{
+		for (int x = 0 ; x < 10; x = x + 1)  //assigning array to a value of 0 of all locations
+		{
+			grid[x][y] = 0;
+		}
+	}
 	srand((unsigned int)time(NULL)); //required for the rand() to work
 
-	int startX = rand() % 46;  // For Rand 
-
-
-		for (int x = startX; x < startX + 5; x = x + 1)  //places ship
+	int dir = rand() % 2;
+		if (dir == 0)
 		{
-			grid[x] = 5;
-		}
 
+			int startX = rand() % 6;  // For Rand 
+			int startY = rand() % 10;
+
+			for (int x = startX; x < startX + 5; x = x + 1)  //places ship
+				{
+				grid[x][startY] = 5;
+
+				}
+		}
+		else
+			{
+			int startX = rand() % 10;
+			int startY = rand() % 6;
+		
+			for (int y = startY; y < startY + 5; y = y + 1)
+				{
+					grid[startX][y] = 5;
+				}
+			}
+		}
+	
 		int ammo = 12; //starting ammo
 		int hits = 0;  //hit counter will track when sunk
 
 		while (ammo > 0 && hits < 5 )  //Main game oot begins here
 		{
 			
-			for (int x = 0; x < 50; x = x + 1) // For loop display for game
+
+
+		for ( int y = 0; y < 10; y = y + 1)
+		{
+			for (int x = 0; x < 10; x = x + 1) // For loop display for game
 			{
-				if (grid[x] == 0) // Water Value
+				if (grid[x][y] == 0) // Water Value
 				{
-					cout << "~ " ; //  Water display
+					cout << "~ " << endl; //  Water display
 				}
 				else if (grid[x] == 5) // Carrier Value
 				{
@@ -47,6 +72,7 @@ int main()
 					cout << "X " ; // Display missed shot
 				}
 			}
+		}
 			cout << endl; 
 
 			//begin fire sequence

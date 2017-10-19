@@ -1,13 +1,37 @@
-﻿Build started 10/12/2017 12:31:17 PM.
+﻿Build started 10/17/2017 11:41:01 AM.
      1>Project "C:\Users\CC-SD\Documents\GitHub\code\C++\Battleship\Project1\Project1.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
          Source.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\CC-SD\Documents\GitHub\code\C++\Battleship\Debug\Project1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\CC-SD\Documents\GitHub\code\C++\Battleship\Debug\Project1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\CC-SD\Documents\GitHub\code\C++\Battleship\Debug\Project1.lib" /MACHINE:X86 Debug\Source.obj
-         Project1.vcxproj -> C:\Users\CC-SD\Documents\GitHub\code\C++\Battleship\Debug\Project1.exe
-     1>Done Building Project "C:\Users\CC-SD\Documents\GitHub\code\C++\Battleship\Project1\Project1.vcxproj" (Build target(s)).
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(49): error C2059: syntax error : 'while'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(50): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(50): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(103): error C2059: syntax error : 'if'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(104): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(104): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(107): error C2059: syntax error : 'else'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(108): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(108): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(112): error C2059: syntax error : 'for'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(112): error C2143: syntax error : missing ')' before ';'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(112): error C2143: syntax error : missing ';' before '<'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(112): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(112): error C2086: 'int x' : redefinition
+                 c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(112) : see declaration of 'x'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(112): error C2059: syntax error : ')'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(113): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(113): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(131): error C2143: syntax error : missing ';' before '<<'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(131): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(132): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(132): error C2365: 'system' : redefinition; previous definition was 'function'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(539) : see declaration of 'system'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(132): error C2440: 'initializing' : cannot convert from 'const char [6]' to 'int'
+                 There is no context in which this conversion is possible
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(133): error C2059: syntax error : '}'
+     1>c:\users\cc-sd\documents\github\code\c++\battleship\project1\source.cpp(133): error C2143: syntax error : missing ';' before '}'
+     1>Done Building Project "C:\Users\CC-SD\Documents\GitHub\code\C++\Battleship\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.16
+Time Elapsed 00:00:00.69
