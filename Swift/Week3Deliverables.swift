@@ -14,31 +14,20 @@ while	( counter <= term )
 		Fibonacci.append (t3)
 		t1 = t2
 		t2 = t3 
-		// print( "The Fibonacci Term \(counter) value is \(t3)")
+	
 		
 		counter = counter + 1
 	}
+print("This is the Fibonacci array")	
 print (Fibonacci)
-	
+
 var goldenRatio = [Double]()
 
 for i in 1..<(Fibonacci.count-1) {
 	goldenRatio.append(Fibonacci[i+1]/Fibonacci[i])
 }
-
+print("This is the goldenRatio array")
 print(goldenRatio)
-// // var array:[Int] = [5, 15, 3, 7, -2]
-
-// var num = Fibonacci.count
-// print ("This is how many elements I have in my Fibonacci array \(num)")
-
-// var goldenRatio = [Double]()
-
-// goldenRatio.append(Fibonacci[num-1]/Fibonacci[num-2])
-
-// var gold = goldenRatio.count
-// print("Here's the Golden Ratio for the Fibonacci's \(num-1), \(goldenRatio[gold-1]) ")
-
 
 
 
@@ -86,6 +75,7 @@ let class2:[Int] = [1, 2, 3]
 var giggles = [Int]()
 
  var classSize = ArrayCombiner (a1:class1, a2:class2)
+ print("This is the combined array filled in from the function")
  print(classSize)
 
  giggles.append(contentsOf: class2)
